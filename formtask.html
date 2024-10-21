@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>formtask</title>
+    <style>
+      form {
+        text-align: center;
+      }
+      h1,
+      h3 {
+        text-align: center;
+      }
+      body {
+        background-color: aquamarine;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>ADMISSIONS</h1>
+    <form action="" method="post">
+      <div>
+        <label for="sname">Student Name</label>
+        <input type="text" id="sname" placeholder="hello" />
+      </div>
+      <label for="bdate">Birth Date</label>
+      <input type="date" id="bdate" /> <br />
+      <label for="email"> Email</label>
+      <input type="email" id="email" /> <br />
+      <label for="gender"> Gender</label>
+      <select name="gender" id="gender">
+        <option value="">Select</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+      </select>
+      <br />
+      <br />
+      <br />
+      <label for="grade">Current Grade</label>
+      <select name="grade" id="grade">
+        <option value="">Select</option>
+        <option value="first">First</option>
+        <option value="second">Second</option>
+        <option value="Third">Thrid</option>
+      </select>
+      <br />
+      <label for="">Returning Student</label>
+      <input type="checkbox" /> <br />
+      <h3>PARENT INFORMATION</h3>
+      <label for="">Father Name</label>
+      <input type="text" /> <br />
+      <label for="">Mother Name</label>
+      <input type="text" /> <br />
+      <h3>Upload files</h3>
+      <label for="">upload supportinh files</label>
+      <input type="file" /> <br />
+      <button>Submit</button> <br />
+    </form>
+  </body>
+</html>

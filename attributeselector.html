@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* input[required] {
+        border: 2px solid blue;
+      } */
+      /* input[type="text"] {
+        border: 2px solid red;
+      } */
+      p[class="highlight"] {
+        color: brown;
+      }
+      p[class~="highlight"] {
+        color: rgb(162, 28, 196);
+      }
+      a[lang|="en"] {
+        color: red;
+      }
+      img[src^="https"] {
+        border: 5px dashed skyblue;
+      }
+      img[src$="png"] {
+        border: 5px solid;
+      }
+      input[name*="user"] {
+        background-color: rgb(206, 198, 212);
+      }
+    </style>
+  </head>
+  <body>
+    <p class="highlight">Lorem ipsum dolor sit amet.</p>
+    <p class="box highlight">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+    </p>
+    <p class="box">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia,
+      deserunt?
+    </p>
+    <a lang="en" href="#">english</a>
+    <a lang="en-Hindi" href="#">Hindi</a>
+    <a lang="Punjabi" href="#">Punjabi</a>
+    <img width="100" src="profilepic.png" alt=" PIC" />
+    <img
+      width="100"
+      src="https://www.worldatlas.com/r/w960-q80/upload/37/d0/9d/in-01.jpg"
+      alt=" MAP"
+    />
+
+    <form action="" method="post">
+      <label for="user-email"> Email</label>
+      <input type="text" name="user-email" id="user-email" /><br />
+      <label for="user-phone">contact</label>
+      <input type="password" name="user-phone" required /><br />
+      <label
+        >User name
+
+        <input type="email" name="username" required />
+      </label>
+      <button type="submit">Submit</button>
+      <button type="reset">Reset</button>
+    </form>
+  </body>
+</html>

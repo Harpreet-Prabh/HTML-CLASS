@@ -1,0 +1,13 @@
+h4{
+    color: blueviolet;
+}
+#text{
+    color: blue;
+    /* margin: 40px 20px;  */
+    margin-top: 20px;
+    border: 2px solid red;
+    padding: 20px;
+}
+.content{
+    color:brown;
+}

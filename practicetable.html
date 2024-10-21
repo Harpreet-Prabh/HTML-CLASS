@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Styled Table</title>
+    <style>
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+
+      th,td {
+        padding: 10px;
+        border: 1px solid #ddd;
+      }
+
+      thead {
+        background-color: #f2f2f2;
+      }
+
+      tr:nth-child(even) {
+        background-color: #ad2121;
+      }
+      tr:nth-child(odd) {
+        background-color: #6d7e9c;
+      }
+      th {
+        background-color: #4caf50;
+        color: white;
+      }
+      tfoot {
+        background-color: #f9f9f9 !important;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <table cellpadding="5" cellspacing="4">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Age</th>
+          <th>City</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>John</td>
+          <td>30</td>
+          <td>New York</td>
+        </tr>
+        <tr>
+          <td>Jane</td>
+          <td>25</td>
+          <td>Los Angeles</td>
+        </tr>
+        <tr>
+          <td>Mike</td>
+          <td>32</td>
+          <td>Chicago</td>
+        </tr>
+        <tr>
+          <td>ryan</td>
+          <td>27</td>
+          <td>mexico</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="3">Table Footer</td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>

@@ -1,0 +1,17 @@
+#textone{
+    background-color: lightpink ;
+}
+.classone{
+    color: white;
+    background-color: dodgerblue;
+    padding: 10px 20px;
+    margin: 3px;
+    text-align: center;
+    border: transparent;
+    border-radius: 23px;
+}
+
+.classone:hover{
+background-color: lightblue;
+box-shadow: 4px 4px 10px grey;
+}
