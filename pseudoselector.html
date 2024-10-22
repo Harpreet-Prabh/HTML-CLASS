@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>pseudoselector</title>
+    <style>
+      button:hover {
+        background-color: blue;
+      }
+      p:hover {
+        color: aqua;
+      }
+      button:active {
+        background-color: blueviolet;
+      }
+      input:focus {
+        border: 10px solid yellow;
+        outline: transparent;
+      }
+      p:first-child {
+        color: red;
+      }
+      p:last-child {
+        color: purple;
+      }
+      p:nth-child(2) {
+        color: skyblue;
+      }
+      p:nth-last-child(2) {
+        color: yellowgreen;
+      }
+      a:visited {
+        color: darkorange;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="#">click me</a>
+    <button>submit</button>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <input type="text" />
+    <div>
+      <p>lorem5</p>
+      <p>lorem5</p>
+      <p>lorem5</p>
+      <p>lorem5</p>
+      <p>lorem5</p>
+    </div>
+
+    <p>hello</p>
+    <p>hello</p>
+    <p>hello</p>
+    <p>hello</p>
+    <p>hello</p>
+    <p>hello</p>
+  </body>
+</html>
