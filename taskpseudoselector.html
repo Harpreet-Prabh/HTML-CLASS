@@ -5,19 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>task pseudo selector</title>
     <style>
-      input[type="radio"]:checked {
+      input[type="checkbox"]:checked + label:hover {
         box-shadow: 0 0 0 5px darkorchid;
       }
     </style>
   </head>
   <body>
     <form action="">
-      <label for="">Hindi</label>
-      <input type="radio" />
-      <label for="">Punjabi</label>
-      <input type="radio" />
-      <label for="">English</label>
-      <input type="radio" />
+      <div>
+        <input type="checkbox" name="language" />
+        <label for="">Hindi</label>
+      </div>
+      <div>
+        <input type="checkbox" name="language" />
+        <label for="">Punjabi</label>
+      </div>
+      <div>
+        <input type="checkbox" name="language" />
+        <label for="">English</label>
+      </div>
     </form>
   </body>
 </html>
