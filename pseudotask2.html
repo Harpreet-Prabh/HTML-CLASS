@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>task2</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Slab:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /* // <uniquifier>: Use a unique and descriptive class name */
+      /* // <weight>: Use a value from 300 to 800 */
+
+      body {
+        font-family: "Open Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 300;
+        font-style: normal;
+        font-variation-settings: "wdth" 100;
+      }
+      .answer {
+        /* display: none; */
+        max-height: 0;
+        overflow: hidden;
+      }
+      .faq-item:target > .answer {
+        /* background-color: lightblue; */
+        /* display: block; */
+        max-height: 200px;
+        transition: max-height 0.5s ease-out;
+      }
+      .faq-item:target {
+        background-color: lightblue;
+      }
+      a:hover {
+        color: brown;
+      }
+      a {
+        text-decoration: none;
+        color: #333;
+        font-weight: bolder !important;
+        font-size: 20px;
+      }
+      h1 {
+        text-align: center;
+      }
+      .faq-container {
+        margin: auto;
+        max-width: 600px;
+        /* text-align: center; */
+      }
+      .faq-item {
+        padding: 15px;
+        margin-bottom: 10px;
+        background-color: rgb(216, 207, 207);
+        border: 1px solid rgb(102, 95, 95);
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Frequently asked Questions</h1>
+    <div class="faq-container">
+      <div class="faq-item" id="html">
+        <a href="#html">what is HTML? </a>
+        <div class="answer">
+          <p>
+            HTML is the standard markup language for creating Web pages. HTML
+            describes the structure of a Web page. HTML consists of a series of
+            elements. HTML elements tell the browser how to display the content.
+            HTML elements label pieces of content such as "this is a heading",
+            "this is a paragraph", "this is a link", etc.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item" id="css">
+        <a href="#css">what is CSS? </a>
+        <div class="answer">
+          <p>
+            CSS is the acronym of “Cascading Style Sheets”. CSS is a computer
+            language for laying out and structuring web pages (HTML or XML).
+            This language contains coding elements and is composed of these
+            “cascading style sheets” which are equally called CSS files
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item" id="javascript">
+        <a href="#javascript">what is JAVASCRIPT? </a>
+        <div class="answer">
+          <p>
+            JavaScript is a scripting language that enables you to create
+            dynamically updating content, control multimedia, animate images,
+            and pretty much everything else
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

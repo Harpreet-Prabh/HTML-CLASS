@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      p::first-letter {
+        font-weight: bolder;
+        color: blue;
+        font-size: 30px;
+      }
+      p::first-line {
+        font-weight: bolder;
+        color: blue;
+        font-size: 30px;
+      }
+      ::selection {
+        background-color: yellow;
+        color: brown;
+      }
+      input[type="text"]::placeholder {
+        color: rgb(126, 22, 22);
+        font-style: italic;
+      }
+      input[type="file"]::file-selector-button {
+        background-color: green;
+        color: white;
+        border: none;
+        padding: 5px 10px;
+        cursor: pointer;
+      }
+      li::marker {
+        color: blueviolet;
+        font-size: larger;
+      }
+      h1::after {
+        content: " :) ";
+      }
+      h1::before {
+        content: " :) ";
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa totam
+      placeat enim adipisci repudiandae saepe delectus vero, veniam ducimus,
+      excepturi laudantium! Officia consequuntur minima iusto excepturi suscipit
+      accusamus, quaerat quo! Id repellendus excepturi architecto, sed accusamus
+      explicabo iusto animi et, molestiae exercitationem quis repellat ex
+      cupiditate, quasi inventore quas ad sint. Doloremque officiis maxime
+      fugiat animi perspiciatis, tenetur deserunt! Necessitatibus! Et tenetur
+      magni impedit blanditiis illo earum eveniet, dolor ratione veritatis
+      excepturi ea doloremque? Suscipit sapiente, ipsa odit soluta, animi a
+      molestias ea possimus obcaecati amet aliquam ipsam eius consectetur!
+      Maxime nobis voluptate possimus, eius fugit incidunt aliquam cumque
+      expedita accusantium corporis doloribus voluptatibus magni? Ab et laborum
+      dicta, rerum tempora exercitationem ad sed tenetur quisquam sunt,
+      perspiciatis, nihil reiciendis. Dolorem voluptates nihil corporis
+      reprehenderit, blanditiis eligendi at magni illo suscipit deleniti quas
+      culpa rerum dolores vitae! Natus incidunt fuga voluptates consequatur
+      culpa fugit, magnam exercitationem non minus adipisci deleniti?
+    </p>
+    <h1>pseudo elements</h1>
+    <input type="text" placeholder="Enter your first name" />
+    <input type="file" />
+    <ul>
+      <li>list1</li>
+      <li>list2</li>
+      <li>list3</li>
+      <li>list4</li>
+    </ul>
+  </body>
+</html>
