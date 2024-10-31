@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        height: 500px;
+        position: relative;
+      }
+      .box {
+        position: absolute;
+        width: 150px;
+        height: 150px;
+        border: 2px solid black;
+        color: white;
+      }
+      .red {
+        background-color: red;
+        top: 50px;
+        left: 50px;
+        z-index: 1;
+      }
+      .yellow {
+        background-color: yellow;
+        top: 100px;
+        left: 100px;
+        z-index: 2;
+      }
+      .green {
+        background-color: green;
+        top: 150px;
+        left: 150px;
+        z-index: 3;
+      }
+      .blue {
+        background-color: blue;
+        top: 200px;
+        left: 200px;
+        z-index: 4;
+      }
+      .box:hover {
+        z-index: 5;
+        transform: scale(1.1) rotate(45deg);
+        transition: all 0.2s;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box red">zindex 1</div>
+      <div class="box yellow">zindex2</div>
+      <div class="box green">zinswx3</div>
+      <div class="box blue">zindex4</div>
+    </div>
+  </body>
+</html>
