@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>taskpostion</title>
+    <style>
+      .container {
+        height: 500px;
+        position: relative;
+        overflow: auto;
+      }
+      .box {
+        position: absolute;
+        width: 150px;
+        height: 150px;
+        border: 2px solid black;
+        color: white;
+        /* transition: all 0.5s ease-in; */
+      }
+      img {
+        width: 150x;
+        height: 150px;
+        top: 50px;
+        left: 50px;
+        z-index: 1;
+      }
+      .image1 {
+        top: 50px;
+        left: 50px;
+        z-index: 2;
+      }
+      .image2 {
+        top: 100px;
+        left: 100px;
+        z-index: 2;
+      }
+      .image3 {
+        top: 150px;
+        left: 150px;
+        z-index: 3;
+      }
+      .image4 {
+        top: 200px;
+        left: 200px;
+        z-index: 4;
+      }
+
+      .box:hover {
+        z-index: 5;
+        transform: scale(1.1) rotate(45deg);
+        transition: all 0.2s ease-in;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box image1"><img src="image1.png" alt="" /></div>
+      <div class="box image2"><img src="image2.jpg" alt="" /></div>
+      <div class="box image3"><img src="image3.webp" alt="" /></div>
+      <div class="box image4"><img src="image4.jpeg" alt="" /></div>
+    </div>
+  </body>
+</html>
