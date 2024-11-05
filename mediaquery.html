@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>mediaquery</title>
+    <style>
+      .container {
+        width: 500px;
+        padding: 20px;
+        background-color: lightpink;
+      }
+      .box {
+        background-color: aquamarine;
+      }
+      @media (max-width: 768px) {
+        .box {
+          background-color: orange;
+          color: cyan;
+        }
+      }
+      @media (min-width: 769px) and (max-width: 1024px) {
+        .box {
+          background-color: red;
+          color: lightseagreen;
+        }
+      }
+      @media (orientation: landscape) {
+        .box {
+          display: none;
+        }
+      }
+      @media (orientation: portrait) {
+        .box {
+          display: block;
+        }
+      }
+      @media print {
+        .no-print {
+          display: none;
+        }
+        .heading {
+          font-size: larger;
+        }
+      }
+      @media (prefers-color-scheme: dark) {
+        .themebox {
+          background-color: purple;
+        }
+      }
+      @media (prefers-color-scheme: light) {
+        .themebox {
+          background-color: dodgerblue;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container"><div class="box">text</div></div>
+    <p class="heading">This text will be visible in printing</p>
+    <p class="no-print">This text will not be visible in printing</p>
+    <div class="themebox">hello good morning</div>
+  </body>
+</html>
