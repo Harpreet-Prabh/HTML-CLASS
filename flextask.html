@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>flextask</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      .container {
+        width: 100%;
+        display: flex;
+        padding: 10px 120px;
+        justify-content: space-between;
+      }
+      ul {
+        display: flex;
+        gap: 20px;
+      }
+      li {
+        color: white;
+        font-weight: 600;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container bg-cyan-400">
+      <div class="title text-2xl text-white font-bold">Flex Layout</div>
+      <div class="btn-container">
+        <button
+          class="bg-white px-6 py-2 rounded-md hover:bg-cyan-800 hover:text-white"
+        >
+          Sign In
+        </button>
+        <button
+          class="bg-white px-6 py-2 rounded-md hover:bg-cyan-800 hover:text-white"
+        >
+          signup
+        </button>
+      </div>
+    </div>
+    <div>
+      <nav class="bg-cyan-600 px-24 py-4">
+        <ul>
+          <li>Home</li>
+          <li>Products<i class="fa-solid fa-caret-down ml-2"></i></li>
+          <li>Services<i class="fa-solid fa-caret-down ml-2"></i></li>
+          <li>About<i class="fa-solid fa-caret-down ml-2"></i></li>
+          <li>Contacts</li>
+        </ul>
+      </nav>
+    </div>
+  </body>
+</html>
