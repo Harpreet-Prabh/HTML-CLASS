@@ -13,8 +13,8 @@
     />
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-      .container {
-        width: 100%;
+      .main-container {
+        width: 100% !important;
         display: flex;
         padding: 10px 120px;
         justify-content: space-between;
@@ -25,12 +25,47 @@
       }
       li {
         color: white;
-        font-weight: 600;
+        font-weight: bold;
+      }
+      .main-content {
+        display: flex;
+        gap: 10px;
+        max-width: 80%;
+        margin: 30px auto;
+      }
+      .card {
+        padding: 30px;
+      }
+      .card-container {
+        flex-grow: 1;
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+      }
+      .sidebar-menu {
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+      }
+      .rowone,
+      .rowtwo {
+        display: flex;
+        gap: 10px;
+      }
+      .rowone > .card {
+        flex-grow: 1;
+      }
+      .rowtwo > .card {
+        flex-grow: 1;
+      }
+      .footer {
+        display: flex;
+        justify-content: space-between;
       }
     </style>
   </head>
   <body>
-    <div class="container bg-cyan-400">
+    <div class="main-container bg-cyan-400">
       <div class="title text-2xl text-white font-bold">Flex Layout</div>
       <div class="btn-container">
         <button
@@ -55,6 +90,31 @@
           <li>Contacts</li>
         </ul>
       </nav>
+    </div>
+    <div class="main-content">
+      <div class="card-container">
+        <div class="rowone">
+          <div class="card border-solid border-2 border-slate-100">card1</div>
+          <div class="card border-solid border-2 border-slate-100">card2</div>
+        </div>
+        <div class="card border-solid border-2 border-slate-100">card3</div>
+        <div class="rowtwo">
+          <div class="card border-solid border-2 border-slate-100">card4</div>
+          <div class="card border-solid border-2 border-slate-100">card5</div>
+        </div>
+      </div>
+
+      <div
+        class="card border-solid border-2 border-slate-100 bg-green-100 sidebar-menu"
+      >
+        <div class="card border-2 border-slate-100 bg-white">About</div>
+        <div class="card border-2 border-slate-100 bg-white">Categories</div>
+      </div>
+    </div>
+    <div class="footer bg-cyan-400 px-24 py-2">
+      <div>About us</div>
+      <div>Contact</div>
+      <div>Follow us</div>
     </div>
   </body>
 </html>
