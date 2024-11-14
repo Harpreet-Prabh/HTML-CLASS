@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>flex</title>
+    <style>
+      .dropdown {
+        display: none;
+      }
+      li:hover .dropdown {
+        display: block;
+      }
+      .subdropdown {
+        display: none;
+      }
+      .dropdown > li:hover .subdropdown {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li>Home</li>
+        <li>
+          <a href="">Products</a>
+          <ul class="dropdown">
+            <li>Product1</li>
+            <li>Product2</li>
+            <li>
+              Product3
+              <ul class="subdropdown">
+                <li>sub Product1</li>
+                <li>sub Product2</li>
+                <li>sub Product3</li>
+              </ul>
+            </li>
+            <li>Product4</li>
+          </ul>
+        </li>
+        <li>Services</li>
+        <li>About us</li>
+      </ul>
+    </nav>
+  </body>
+</html>
