@@ -4,44 +4,94 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>flex</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <style>
       .dropdown {
         display: none;
+        position: absolute;
+        background-color: yellowgreen;
+        top: 100%;
+        left: 0%;
       }
       li:hover .dropdown {
         display: block;
       }
       .subdropdown {
         display: none;
+        position: absolute;
+        left: 100%;
+        top: 0%;
+        background-color: aquamarine;
       }
       .dropdown > li:hover .subdropdown {
         display: block;
       }
+      ul {
+        display: flex;
+      }
+      nav > ul > li {
+        position: relative;
+        padding: 5px 20px;
+      }
+      .dropdown > li {
+        position: relative;
+        width: 200px;
+        padding: 5px 10px;
+      }
+      .subdropdown > li {
+        width: 150px;
+        padding: 5px 10px;
+      }
+      nav > ul > li:hover {
+        background-color: brown;
+        color: white;
+        font-weight: bold;
+      }
+      .dropdown > li:hover .subdropdown {
+        background-color: blueviolet;
+        color: white;
+        font-weight: bold;
+        transition: 1s all;
+      }
+      .dropdown > li:hover {
+        background-color: blue;
+        color: white;
+        font-weight: bold;
+        transition: 1s all;
+      }
+      .subdropdown > li:hover {
+        background-color: rgb(204, 68, 209);
+        color: white;
+        font-weight: bold;
+        transition: 1s all;
+      }
     </style>
   </head>
   <body>
-    <nav>
-      <ul>
-        <li>Home</li>
-        <li>
-          <a href="">Products</a>
-          <ul class="dropdown">
-            <li>Product1</li>
-            <li>Product2</li>
-            <li>
-              Product3
-              <ul class="subdropdown">
-                <li>sub Product1</li>
-                <li>sub Product2</li>
-                <li>sub Product3</li>
-              </ul>
-            </li>
-            <li>Product4</li>
-          </ul>
-        </li>
-        <li>Services</li>
-        <li>About us</li>
-      </ul>
-    </nav>
+    <div class="navbar">
+      <nav class="bg-cyan-600 px-24 py-4">
+        <ul>
+          <li>Home</li>
+          <li>
+            <a href="">Products</a>
+            <ul class="dropdown">
+              <li>Product1</li>
+              <li>Product2</li>
+              <li>
+                Product3
+                <ul class="subdropdown">
+                  <li>sub Product1</li>
+                  <li>sub Product2</li>
+                  <li>sub Product3</li>
+                </ul>
+              </li>
+              <li>Product4</li>
+            </ul>
+          </li>
+          <li>Services</li>
+          <li>About us</li>
+        </ul>
+      </nav>
+    </div>
   </body>
 </html>
