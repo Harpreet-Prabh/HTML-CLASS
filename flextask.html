@@ -62,6 +62,65 @@
         display: flex;
         justify-content: space-between;
       }
+      .dropdown {
+        display: none;
+        position: absolute;
+        background-color: yellowgreen;
+        top: 100%;
+        left: 0%;
+      }
+      li:hover .dropdown {
+        display: block;
+      }
+      .subdropdown {
+        display: none;
+        position: absolute;
+        left: 100%;
+        top: 0%;
+        background-color: aquamarine;
+      }
+      .dropdown > li:hover .subdropdown {
+        display: block;
+      }
+      ul {
+        display: flex;
+      }
+      nav > ul > li {
+        position: relative;
+        padding: 5px 20px;
+      }
+      .dropdown > li {
+        position: relative;
+        width: 200px;
+        padding: 5px 10px;
+      }
+      .subdropdown > li {
+        width: 150px;
+        padding: 5px 10px;
+      }
+      nav > ul > li:hover {
+        background-color: brown;
+        color: white;
+        font-weight: bold;
+      }
+      .dropdown > li:hover .subdropdown {
+        background-color: blueviolet;
+        color: white;
+        font-weight: bold;
+        transition: 1s all;
+      }
+      .dropdown > li:hover {
+        background-color: blue;
+        color: white;
+        font-weight: bold;
+        transition: 1s all;
+      }
+      .subdropdown > li:hover {
+        background-color: rgb(204, 68, 209);
+        color: white;
+        font-weight: bold;
+        transition: 1s all;
+      }
     </style>
   </head>
   <body>
@@ -84,7 +143,22 @@
       <nav class="bg-cyan-600 px-24 py-4">
         <ul>
           <li>Home</li>
-          <li>Products<i class="fa-solid fa-caret-down ml-2"></i></li>
+          <li>
+            <a href="">Products <i class="fa-solid fa-caret-down ml-2"></i></a>
+            <ul class="dropdown">
+              <li>Product1</li>
+              <li>Product2</li>
+              <li>
+                Product3
+                <ul class="subdropdown">
+                  <li>sub Product1</li>
+                  <li>sub Product2</li>
+                  <li>sub Product3</li>
+                </ul>
+              </li>
+              <li>Product4</li>
+            </ul>
+          </li>
           <li>Services<i class="fa-solid fa-caret-down ml-2"></i></li>
           <li>About<i class="fa-solid fa-caret-down ml-2"></i></li>
           <li>Contacts</li>
